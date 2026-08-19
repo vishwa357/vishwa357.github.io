@@ -1,4 +1,21 @@
 baseURL = 'https://vishwa357.github.io/'
 languageCode = 'en-us'
 title = 'Vishwakant Mishra'
-theme = 'hugo-profile'
+theme = 'PaperMod'
+
+[params]
+  author = 'Vishwakant Mishra'
+  description = 'Software Engineer — Games, AR, HMI'
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+
+[menu]
+  [[menu.main]]
+    name = 'Home'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    name = 'Books'
+    url = '/books/'
+    weight = 2
