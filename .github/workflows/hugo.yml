@@ -25,11 +25,11 @@ jobs:
           submodules: recursive   # ← critical: fetches the hugo-profile theme
           fetch-depth: 0
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: 'latest'
-          extended: true
+      - name: Install Hugo
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb \
+            https://github.com/gohugoio/hugo/releases/download/v0.148.1/hugo_extended_0.148.1_linux-amd64.deb \
+            && sudo dpkg -i ${{ runner.temp }}/hugo.deb
 
       - name: Build
         run: hugo --minify
