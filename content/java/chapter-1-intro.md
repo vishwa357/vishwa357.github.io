@@ -2,6 +2,8 @@
 date = '2026-08-19T11:47:14+05:30'
 draft = false
 title = 'Chapter 1 Intro'
+categories = ["java"]
+tags = ["java"]
 +++
 
 ### Exception Handling

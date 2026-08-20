@@ -9,6 +9,7 @@ theme = 'PaperMod'
   ShowReadingTime = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
+  pluralizeListTitles = false
 
 [menu]
   [[menu.main]]
@@ -16,6 +17,6 @@ theme = 'PaperMod'
     url = '/'
     weight = 1
   [[menu.main]]
-    name = 'Books'
-    url = '/books/'
+    name = 'Java'
+    url = '/java/'
     weight = 2

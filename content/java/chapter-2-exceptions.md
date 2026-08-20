@@ -1,7 +1,9 @@
 +++
 date = '2026-08-21T00:07:08+05:30'
-draft = true
+draft = false
 title = 'Chapter 2 Exceptions'
+categories = ["java"]
+tags = ["java"]
 +++
 
 # Java Exceptions
