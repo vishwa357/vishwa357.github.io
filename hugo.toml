@@ -20,3 +20,7 @@ theme = 'PaperMod'
     name = 'Java'
     url = '/java/'
     weight = 2
+  [[menu.main]]
+    name = 'Spring'
+    url = '/spring/'
+    weight = 3
