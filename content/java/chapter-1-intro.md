@@ -8,8 +8,9 @@ tags = ["java"]
 
 ### Exception Handling
 #### Checked and Unchecked Exceptions
-1. Checked - code calls a method that throws a checked exception, code detects an error and throws a checked exception
-2. Unchecked - code error like IndexOutOfBoundsException, internal error in JVM or runtime
+ 1. **Checked** - code calls a method that throws a checked exception, code detects an error and throws a checked exception
+ 2. **Unchecked** - code error like IndexOutOfBoundsException, internal error in JVM or runtime.
+ 
 Checked exceptions must be specified with method declaration.
 Overriding function in the overloading class cannot have more checked exceptions or different checked exceptions than the overridden method in the base class. It can have no checked exceptions (even if the overridden method has exceptions).
 
@@ -33,8 +34,24 @@ Filters
 Formatters
 
 ### Generics 
-Type erasure 
-Bridge methods 
+#### Type erasure 
+Generic type is instantly translated to its raw type. So `Pair<String>` becomes `Pair<Object>`.
+```java
+Pair<String> pair_str = ...;
+Pair<Integer> pair_int = ...;
+if (pair_str.getClass() == pair_str.getClass()) // no error, true
+  // some code ...
+
+if (pair_str instanceof Pair<String>) // error
+  // some code ...
+
+if (pair_str instanceof Pair<T>)  // error
+  // some code ...
+
+Pair<String> pair_str2 = (Pair<String>)pair_str;  // compilation error or warning
+```
+#### Bridge methods 
+
 
 #### Restrictions
 - Generic classes can't be instantiated with primitive types

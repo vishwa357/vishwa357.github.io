@@ -1,7 +1,12 @@
 baseURL = 'https://vishwa357.github.io/'
 languageCode = 'en-us'
 title = "Vishwa's Notes"
-theme = 'PaperMod'
+theme = 'Hextra'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      hardWraps = true
 
 [params]
   author = 'Vishwakant Mishra'
@@ -28,3 +33,17 @@ theme = 'PaperMod'
     name = 'Design Patterns'
     url = '/design-patterns/'
     weight = 4
+
+[[cascade]]
+  [cascade._target]
+    path = "/java/**"
+  [cascade.params]
+    book_sort = "weight"
+
+[[cascade]]
+  [cascade._target]
+    path = "/spring/**"
+  [cascade.params]
+    book_sort = "weight"
+
+

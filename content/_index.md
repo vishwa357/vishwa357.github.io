@@ -19,4 +19,4 @@ Wanna be Wizard*
 - 🚗 **2024–Present** — Automotive Cluster HMI @ Stellantis/LTTS, Bengaluru
 
 ---
-The things I write here are just my notes. There are much better place to learn these things.
+The things I write here are just my notes. There are much better places to learn these things.
